@@ -3,7 +3,7 @@ require_once __DIR__ . '/DB_connect.php';
 require_once __DIR__ . '/logger.php';
 
 // Initialize logger with Telegram bot credentials
-$botToken = '7680326371:AAEODyquJ9Nd48etX8lS6KqG7sTuofa59FA';
+$botToken = '8338166864:AAHti-uLAKCtTUm7iW15xyriTyu6vjd68Bc';
 $chatId = '655376119';
 $logger = new Logger($botToken, $chatId);
 $logger->logAccess();
