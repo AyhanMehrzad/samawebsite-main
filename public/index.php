@@ -18,17 +18,17 @@ echo "Access logged successfully.";
     <title>Document</title>
     <link
       rel="stylesheet"
-      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../../style/style.css" />
     <link
       rel="stylesheet"
-      href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
-    <link rel="stylesheet" href="../style/media.css" />
+    <link rel="stylesheet" href="../../style/media.css" />
     <link
       rel="stylesheet"
-      href="../node_modules/swiper/swiper-bundle.min.css"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
   </head>
   <body>
@@ -246,9 +246,9 @@ echo "Access logged successfully.";
         <img class="footer__right-img" src="pic/random1.png" alt="" />
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <script src="../main.js"></script>
-    <script src="../node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="../../main.js"></script>
   </body>
 </html>
