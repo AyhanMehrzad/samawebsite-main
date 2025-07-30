@@ -1,11 +1,16 @@
 <?php
-require_once __DIR__ . '/logger.php';
+// Enable error reporting for debugging
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+// Temporarily commenting out logger to debug page loading
+// require_once __DIR__ . '/logger.php';
 
 // Initialize logger with Telegram bot credentials
-$botToken = '8338166864:AAHti-uLAKCtTUm7iW15xyriTyu6vjd68Bc';
-$chatId = '8004922440';
-$logger = new Logger($botToken, $chatId);
-$logger->logAccess();
+// $botToken = '8338166864:AAHti-uLAKCtTUm7iW15xyriTyu6vjd68Bc';
+// $chatId = '8004922440';
+// $logger = new Logger($botToken, $chatId);
+// $logger->logAccess();
 // Remove the plain text header and echo
 // header('Content-Type: text/plain');
 //  echo "index is working.";
@@ -22,12 +27,12 @@ $logger->logAccess();
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="../../style/style.css" />
+    <link rel="stylesheet" href="../style/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
-    <link rel="stylesheet" href="../../style/media.css" />
+    <link rel="stylesheet" href="../style/media.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -251,6 +256,6 @@ $logger->logAccess();
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <script src="../../main.js"></script>
+    <script src="../main.js"></script>
   </body>
 </html>
