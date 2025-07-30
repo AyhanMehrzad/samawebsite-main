@@ -10,7 +10,7 @@ $logger->logAccess();
 
 // Remove the plain text header and echo
 // header('Content-Type: text/plain');
-// echo "index is working.";
+//  echo "index is working.";
 ?>
 <!DOCTYPE html>
 <html lang="en">

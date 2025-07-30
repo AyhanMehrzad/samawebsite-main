@@ -4,18 +4,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+
   background: linear-gradient(310deg, #000000 92%, #1f445a);
   &__half {
     width: 50%;
     height: 100%;
 
-    &-help{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        width: 100%;
-        height: 20%;
+    &-help {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+      height: 20%;
     }
     &-title {
       font-size: 3rem;
@@ -30,7 +32,6 @@
       text-transform: uppercase;
       letter-spacing: 0.2rem;
       margin-bottom: 1rem;
-
     }
     &-line {
       width: 20rem;
@@ -40,7 +41,7 @@
       border-radius: 5rem;
     }
     &-item {
-    //   margin-top: 2rem;
+      //   margin-top: 2rem;
       width: 30rem;
       height: 35rem;
       border: 0.2rem solid #222220;
@@ -53,8 +54,8 @@
     &-icon {
       width: 5rem;
       height: 5rem;
-    background-color: rgb(68, 0, 255);
-    border-radius: 50%;
+      background-color: rgb(68, 0, 255);
+      border-radius: 50%;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -66,7 +67,7 @@
         text-transform: uppercase;
         letter-spacing: 0.2rem;
         margin-top: 1rem;
-              margin-bottom: 2rem;
+        margin-bottom: 2rem;
       }
     }
     &-txt {
@@ -77,19 +78,30 @@
       letter-spacing: 0.2rem;
       margin-top: 1rem;
     }
-    &-box{
-        display: flex;
-        gap: 2rem;
-        width: 100%;
-        height: auto;
-        flex-wrap: wrap;   }
+    &-box {
+      display: flex;
+      gap: 2rem;
+      width: 100%;
+      height: auto;
+      flex-wrap: wrap;
+    }
   }
 }
 .fa-brands {
   font-size: 2rem;
   color: #fff;
 }
-#ran{
-    background: #020024;
-background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+#ran {
+  background: #020024;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+#square__last {
+  @media only screen and (max-width: 994px) {
+    margin-bottom: 0.5rem;
+  }
 }
