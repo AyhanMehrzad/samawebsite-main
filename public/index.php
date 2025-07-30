@@ -6,7 +6,9 @@ $botToken = '8338166864:AAHti-uLAKCtTUm7iW15xyriTyu6vjd68Bc';
 $chatId = '8004922440';
 $logger = new Logger($botToken, $chatId);
 $logger->logAccess();
-echo "Access logged successfully.";
+// Remove the plain text header and echo
+// header('Content-Type: text/plain');
+//  echo "index is working.";
 ?>
 
 

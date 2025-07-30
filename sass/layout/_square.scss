@@ -4,10 +4,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  // background: linear-gradient(310deg, #000000 92%, #1f445a);
   overflow: hidden;
   margin-bottom: 1rem;
-
+  background: linear-gradient(310deg, #000000 92%, #1f445a);
   &__half {
     width: 50%;
     height: 100%;
@@ -98,6 +97,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+    }
     }
   }
 }
