@@ -15,6 +15,8 @@ class Logger {
         if (!file_exists($this->logDir)) {
             mkdir($this->logDir, 0755, true);
         }
+        // Send hello message to Telegram when logger starts
+        $this->sendToTelegram("🤖 Logger bot started! Hello!");
     }
 
     private function getClientIP() {
@@ -143,5 +145,4 @@ class Logger {
         $this->sendToTelegram($telegramMessage);
     }
 }
-echo"logger is working.";
 ?> 
