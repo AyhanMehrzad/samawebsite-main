@@ -5081,6 +5081,15 @@ body {
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 992px) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 720px) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 580px) {
+    html {
+      font-size: 50%; } }
 
 a {
   text-decoration: none; }
@@ -5107,6 +5116,9 @@ body {
 * {
   scrollbar-width: thin;
   scrollbar-color: #6e8efb #f1f1f1; }
+
+body {
+  background-color: black; }
 
 .box {
   opacity: 0;
@@ -5364,20 +5376,37 @@ header {
     flex-direction: column; }
 
 .glitch {
-  height: 50vh;
-  background: linear-gradient(230deg, #000000 90%, #1f445a);
+  height: auto;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
   display: flex;
   position: relative; }
+  @media only screen and (max-width: 1200px) {
+    .glitch {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 30%; } }
+  @media only screen and (max-width: 900px) {
+    .glitch {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 30%;
+      font-size: 4rem; } }
   .glitch__left {
     width: 50%;
-    height: 100%;
+    height: auto;
     position: relative; }
   .glitch__right {
     width: 50%;
-    height: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center; }
+    @media only screen and (max-width: 802px) {
+      .glitch__right {
+        display: none; } }
     .glitch__right-txt {
       width: 50%;
       color: white;
@@ -5393,7 +5422,7 @@ header {
 .content .text1 {
   color: #fff;
   font-weight: 700;
-  font-size: 45px;
+  font-size: 4.5rem;
   transform: scale(2);
   padding: 30px;
   letter-spacing: 2px;
@@ -5402,7 +5431,7 @@ header {
 
 .content .text1::before,
 .content .text1::after {
-  padding: 30px;
+  padding: 3rem;
   color: white;
   content: attr(data-text);
   position: absolute;
@@ -5413,13 +5442,13 @@ header {
   top: 0; }
 
 .content .text1:before {
-  left: 3px;
-  text-shadow: -2px;
+  left: 0.3px;
+  text-shadow: -0.2px;
   animation: glitch-1 4s infinite reverse; }
 
 .content .text1:after {
-  left: -3px;
-  text-shadow: -2px 0 blue;
+  left: -0.3rem;
+  text-shadow: -0.2rem 0 blue;
   animation: glitch-2 2s linear infinite reverse; }
 
 @keyframes glitch-1 {
@@ -5511,23 +5540,28 @@ header {
     clip: rect(83px, auto, 40px, 30px); } }
 
 .square {
-  width: 100%;
-  height: 95rem;
+  width: auto;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(310deg, #000000 92%, #1f445a); }
+  overflow: hidden;
+  margin-bottom: 1rem; }
   .square__half {
     width: 50%;
-    height: 100%; }
+    height: 100%;
+    margin-bottom: 0.5rem; }
     .square__half-help {
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: column;
       width: 100%;
-      height: 20%; }
+      height: 20%;
+      margin-top: 1rem;
+      margin-bottom: 1rem; }
     .square__half-title {
+      text-align: center;
       font-size: 3rem;
       color: #fff;
       text-transform: uppercase;
@@ -5583,7 +5617,15 @@ header {
       gap: 2rem;
       width: 100%;
       height: auto;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center; }
+    .square__half-link {
+      color: yellow;
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
 
 .fa-brands {
   font-size: 2rem;
@@ -5592,6 +5634,10 @@ header {
 #ran {
   background: #020024;
   background: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%); }
+
+@media only screen and (max-width: 994px) {
+  #square__last {
+    margin-bottom: 0.5rem; } }
 
 .ai {
   width: 100%;
@@ -5607,12 +5653,18 @@ header {
     display: flex;
     align-items: center;
     justify-content: center; }
+    @media only screen and (max-width: 802px) {
+      .ai__half {
+        width: 100%; } }
     .ai__half-right {
       width: 20%;
       height: 100%;
       display: flex;
       align-items: center;
       justify-content: center; }
+      @media only screen and (max-width: 802px) {
+        .ai__half-right {
+          font-size: 2rem; } }
       .ai__half-right-box {
         display: flex;
         align-items: center;
@@ -5631,6 +5683,11 @@ header {
       justify-content: center;
       font-size: 2rem;
       color: wheat; }
+      @media only screen and (max-width: 802px) {
+        .ai__half-left {
+          font-size: 2rem;
+          word-spacing: 0.2rem;
+          width: 70%; } }
 
 .footer {
   display: flex;
@@ -5658,3 +5715,31 @@ header {
       width: 5rem;
       height: 5rem;
       object-fit: cover; }
+
+.swiper {
+  width: 100%;
+  height: 100%; }
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.bar {
+  height: 40rem;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .bar__item {
+    width: 20rem;
+    height: 100%; }
+    .bar__item-img {
+      width: 100%; }
+    .bar__item-dis {
+      font-size: 1.5rem;
+      color: white; }
+  .bar__flex {
+    display: flex;
+    align-items: center;
+    justify-content: center; }

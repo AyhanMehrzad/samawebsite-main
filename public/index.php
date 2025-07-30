@@ -1,17 +1,15 @@
 <?php
-require_once __DIR__ . '/DB_connect.php';
 require_once __DIR__ . '/logger.php';
 
 // Initialize logger with Telegram bot credentials
-$botToken = '7680326371:AAEODyquJ9Nd48etX8lS6KqG7sTuofa59FA';
-$chatId = '655376119';
+$botToken = '8338166864:AAHti-uLAKCtTUm7iW15xyriTyu6vjd68Bc';
+$chatId = '8004922440';
 $logger = new Logger($botToken, $chatId);
 $logger->logAccess();
-
-// Remove the plain text header and echo
-// header('Content-Type: text/plain');
-// echo "index is working.";
+echo "Access logged successfully.";
 ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -136,8 +134,8 @@ $logger->logAccess();
         <span class="position-absolute glitch__right-txt"
           >Amazon is guided by four principles: customer obsession rather than
           competitor focus, passion for invention, commitment to operational
-          excellence, and long-term thinking. We strive to be Earth's most
-          customer-centric company, Earth's best employer, and Earth's safest
+          excellence, and long-term thinking. We strive to be Earth’s most
+          customer-centric company, Earth’s best employer, and Earth’s safest
           place to work.</span
         >
       </div>
@@ -147,9 +145,9 @@ $logger->logAccess();
     <div class="square">
       <div class="square__half">
         <div class="flex-column square__half-help">
-        <div class="square__half-title">Everything You Need</div>
-        <div class="square__half-dis">What Sets Us Apart</div>
-        <div class="square__half-line"></div>
+          <div class="square__half-title">Everything You Need</div>
+          <div class="square__half-dis">What Sets Us Apart</div>
+          <div class="square__half-line"></div>
         </div>
         <div class="square__half-box">
           <div id="ran" class="square__half-item">
@@ -158,80 +156,95 @@ $logger->logAccess();
             </div>
             <div class="square__half-icon-dis">Experience</div>
             <div class="square__half-txt">
-              With over a decade of experience, we create visually appealing, user-friendly, and responsive websites tailored to meet each client's unique needs.
+              With over a decade of experience, we create visually appealing,
+              user-friendly, and responsive websites tailored to meet each
+              client’s unique needs.
             </div>
           </div>
-            <div class="square__half-item">
+          <div class="square__half-item">
             <div class="square__half-icon">
               <i class="fa-brands fa-web-awesome"></i>
             </div>
             <div class="square__half-icon-dis">Experience</div>
             <div class="square__half-txt">
-              With over a decade of experience, we create visually appealing, user-friendly, and responsive websites tailored to meet each client's unique needs.
+              With over a decade of experience, we create visually appealing,
+              user-friendly, and responsive websites tailored to meet each
+              client’s unique needs.
             </div>
           </div>
-            <div id="ran" class="square__half-item">
+          <div id="ran" class="square__half-item">
             <div class="square__half-icon">
               <i class="fa-brands fa-web-awesome"></i>
             </div>
             <div class="square__half-icon-dis">Experience</div>
             <div class="square__half-txt">
-              With over a decade of experience, we create visually appealing, user-friendly, and responsive websites tailored to meet each client's unique needs.
+              With over a decade of experience, we create visually appealing,
+              user-friendly, and responsive websites tailored to meet each
+              client’s unique needs.
             </div>
           </div>
-            <div class="square__half-item">
+          <div class="square__half-item">
             <div class="square__half-icon">
               <i class="fa-brands fa-web-awesome"></i>
             </div>
             <div class="square__half-icon-dis">Experience</div>
             <div class="square__half-txt">
-              With over a decade of experience, we create visually appealing, user-friendly, and responsive websites tailored to meet each client's unique needs.
+              With over a decade of experience, we create visually appealing,
+              user-friendly, and responsive websites tailored to meet each
+              client’s unique needs.
             </div>
           </div>
-            <div id="ran" class="square__half-item">
+          <div id="ran" class="square__half-item">
             <div class="square__half-icon">
               <i class="fa-brands fa-web-awesome"></i>
             </div>
             <div class="square__half-icon-dis">Experience</div>
             <div class="square__half-txt">
-              With over a decade of experience, we create visually appealing, user-friendly, and responsive websites tailored to meet each client's unique needs.
+              With over a decade of experience, we create visually appealing,
+              user-friendly, and responsive websites tailored to meet each
+              client’s unique needs.
             </div>
           </div>
-            <div class="square__half-item">
+          <div id="square__last" class="square__half-item">
             <div class="square__half-icon">
               <i class="fa-brands fa-web-awesome"></i>
             </div>
             <div class="square__half-icon-dis">Experience</div>
             <div class="square__half-txt">
-              With over a decade of experience, we create visually appealing, user-friendly, and responsive websites tailored to meet each client's unique needs.
+              With over a decade of experience, we create visually appealing,
+              user-friendly, and responsive websites tailored to meet each
+              client’s unique needs.
             </div>
           </div>
-          
         </div>
- 
       </div>
     </div>
     <!--!-------------------------------------------- square end ------------------------------------------------------->
     <!--!-------------------------------------------- ai start --------------------------------------------------------->
-    <div class="ai">
+    <!-- <div class="ai">
       <div class="ai__half">
         <div class="ai__half-left">
-          <span>Chat with our AI assistant to get instant answers to your questions and support.</span>
+          <span
+            >Chat with our AI assistant to get instant answers to your questions
+            and support.</span
+          >
         </div>
         <div class="ai__half-right">
-         <a class="ai__half-right-box" href="">
-          <div class="">
-            start
-          </div>
-         </a> 
+          <a class="ai__half-right-box" href="">
+            <div class="">start</div>
+          </a>
         </div>
       </div>
-    </div>
+    </div> -->
     <!--!------------------------------------------- ai end ------------------------------------------------------------>
+   
     <!--!------------------------------------------ footer start ------------------------------------------------------->
+
     <footer class="footer">
-      <div class="footer__left">Copyright © 2025 WebiMax </div>
-      <div class="footer__right"><img class="footer__right-img" src="pic/random1.png" alt=""></div>
+      <div class="footer__left">Copyright © 2025 WebiMax</div>
+      <div class="footer__right">
+        <img class="footer__right-img" src="pic/random1.png" alt="" />
+      </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 

@@ -134,6 +134,16 @@ body {
 }
 html {
   font-size: 62.5%;
+
+  @media only screen and (max-width:992px){
+    font-size: 50%;
+  }
+    @media only screen and (max-width:720px){
+    font-size: 50%;
+  }
+    @media only screen and (max-width:580px){
+    font-size: 50%;
+  }
 }
 a {
   text-decoration: none;
@@ -165,4 +175,7 @@ body {
 * {
   scrollbar-width: thin;
   scrollbar-color: #6e8efb #f1f1f1;
+}
+body{
+  background-color: black;
 }

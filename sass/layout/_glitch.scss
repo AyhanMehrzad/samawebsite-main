@@ -1,28 +1,45 @@
 .glitch {
-  height: 50vh;
-  background: linear-gradient(230deg, #000000 90%, #1f445a);
+  height: auto;
+margin-top: 5rem;
+margin-bottom: 10rem;
   display: flex;
   position: relative;
+  @media only screen and (max-width: 1200px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30%;
+  }
+    @media only screen and (max-width: 900px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30%;
+
+
+    font-size: 4rem;
+  }
   &__left {
     width: 50%;
-    height: 100%;
+    height: auto;
     position: relative;
   }
-  &__right{
+  &__right {
     width: 50%;
-    height: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    &-txt{
-     width: 50%; 
-     color: white;
-     font-size: 2rem  
+          @media only screen and (max-width: 802px) {
+display: none;
+  }
+    &-txt {
+      width: 50%;
+      color: white;
+      font-size: 2rem;
     }
-  } 
+  }
 }
-
-
 
 .content {
   width: auto;
@@ -35,7 +52,7 @@
   //   position: relative;
   color: #fff;
   font-weight: 700;
-  font-size: 45px;
+  font-size: 4.5rem;
   transform: scale(2);
   padding: 30px;
   letter-spacing: 2px;
@@ -45,10 +62,10 @@
 
 .content .text1::before,
 .content .text1::after {
-  padding: 30px;
+  padding: 3rem;
   color: white;
   content: attr(data-text);
-    position: absolute;
+  position: absolute;
   width: 100%;
   height: 100%;
   background: black;
@@ -57,14 +74,14 @@
 }
 
 .content .text1:before {
-  left: 3px;
-  text-shadow: -2px;
+  left: 0.3px;
+  text-shadow: -0.2px;
   animation: glitch-1 4s infinite reverse;
 }
 
 .content .text1:after {
-  left: -3px;
-  text-shadow: -2px 0 blue;
+  left: -0.3rem;
+  text-shadow: -0.2rem 0 blue;
   animation: glitch-2 2s linear infinite reverse;
 }
 
